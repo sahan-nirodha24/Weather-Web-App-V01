@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- iPhone 16 Pro Max notch -->
+        <div class="notch">
+            <div class="camera"></div>
+        </div>
+
+        <!-- Main app content -->
+        <div class="container">
+            <h1>Weather Dashboard</h1>
+
+            <!-- Grid layout for predefined cities -->
+            <div class="city-buttons">
+                <button class="city-btn" data-city="New York">New York</button>
+                <button class="city-btn" data-city="London">London</button>
+                <button class="city-btn" data-city="Tokyo">Tokyo</button>
+                <button class="city-btn" data-city="Colombo">Colombo</button>
+                <button class="city-btn" data-city="Dubai">Dubai</button>
+            </div>
+
+            <!-- Dropdown for country selection -->
+            <div class="country-section">
+                <label for="country-select">Select a Country/City:</label>
+                <select id="country-select" class="scrollable-select">
+                    <option value="">--Select a Country/City--</option>
+                </select>
+            </div>
+
+            <!-- Weather information display -->
+            <div id="weather-info" class="weather-info"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

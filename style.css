@@ -1,0 +1,197 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3);
+    background-size: 400% 400%;
+    animation: rainbowBG 10s ease infinite;
+}
+
+/* Rainbow Gradient Animation */
+@keyframes rainbowBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Mobile Container Styling */
+.mobile-container {
+    width: 100%; 
+    max-width: 340px; 
+    height: 100%; 
+    max-height: 680px;
+    background: url('bg.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Notch Design */
+.notch {
+    width: 70%;
+    height: 50px;
+    background: #000000;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notch .camera {
+    width: 60px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+/* App Container */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+/* Heading */
+h1 {
+    color: #ffdd57;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.city-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.city-btn {
+    background: linear-gradient(45deg, #42a5f5, #6a1b9a);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.city-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #1976d2, #4a148c);
+}
+
+/* Country Dropdown */
+.country-section {
+    margin-top: 30px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffdd57;
+    margin-bottom: 10px;
+}
+
+.scrollable-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Info Box */
+.weather-info {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.weather-info h2 {
+    font-size: 1.5rem;
+    color: #ff0000;
+    text-align: center;
+}
+
+.weather-info p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments for Small Devices */
+@media (max-width: 360px) {
+    .mobile-container {
+        width: 100%;
+        height: 90%;
+        max-height: none; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    .city-btn {
+        font-size: 0.8rem; 
+        padding: 10px; 
+    }
+
+    .scrollable-select {
+        font-size: 0.9rem; 
+    }
+
+    .weather-info h2 {
+        font-size: 1.2rem; 
+    }
+
+    .weather-info p {
+        font-size: 0.9rem; 
+    }
+}
