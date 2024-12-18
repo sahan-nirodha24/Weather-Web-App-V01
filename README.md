@@ -1,4 +1,4 @@
-# This Is A Simple Weather Mobile Web Application 
+## This Is A Simple Weather Mobile Web Application 
 
 This app can displays the current weather for the following 5 cities using the OpenWeatherMap API
 1) New York 
