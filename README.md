@@ -9,7 +9,7 @@ This app can displays the current weather for the following 5 cities using the O
 
 And the other cool feature of this mobile web application is it can display the all over the countries weather details, using for drop down menu and scrolling it and selecting which countries to get the weather informations.
 
-        Screen Shots Of The Weather Mobile Web Application
+        Screen Shots Of The Weather Mobile Web Application Version 01
 
 Normal View Of The Weather Web Mobile Application
 ![Screenshot 2024-12-16 161303](https://github.com/user-attachments/assets/0ee42dc8-913c-4655-8706-279ff08fc82d)
