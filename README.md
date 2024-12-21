@@ -1,15 +1,21 @@
-## This Is A Simple Weather Mobile Web Application Version 01
+## Simple Weather Mobile Web Application (Version 01) 🌤️
+This application provides current weather updates for selected cities and countries, powered by the OpenWeatherMap API.
 
-This app can displays the current weather for the following 5 cities using the OpenWeatherMap API
-1) New York 
-2) London 
-3) Tokyo 
-4) Colombo 
-5) Dubai
+### Features:
++  #### Current Weather for 5 Cities:
+   1) New York
+   2) London
+   3) Tokyo
+   4) Colombo
+   5) Dubai
++ #### Global Weather Details:
+   - Select any country from a scrollable dropdown menu to view its weather information.
 
-And the other cool feature of this mobile web application is it can display the all over the countries weather details, using for drop down menu and scrolling it and selecting which countries to get the weather informations.
+* This project serves as the initial version (v01) of a weather-focused mobile web application.
 
-        Screen Shots Of The Weather Mobile Web Application Version 01
+
+
+###  Screen Shots Of The Weather Mobile Web Application Version 01
 
 Normal View Of The Weather Web Mobile Application
 ![Screenshot 2024-12-16 161303](https://github.com/user-attachments/assets/0ee42dc8-913c-4655-8706-279ff08fc82d)
